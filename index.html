@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spreadsheet</title>
+  <style>
+    body {
+      background-color: #222;
+      color: #eee;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    #container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .item {
+      background-color: #444;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      margin: 10px;
+      overflow: hidden;
+      width: 300px;
+    }
+
+    .item img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .item-content {
+      padding: 10px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 80%;
+      margin: 20px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pandabuy Spreadsheet by @pandajohny</h1>
+  </header>
+
+  <input type="text" id="searchInput" placeholder="Search items...">
+
+  <div id="container">
+    <!-- Sample item -->
+    <div class="item" onclick="redirectToLink('https://www.pandabuy.com/product?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D5416187188?inviteCode=8AJ7KXC6F')">
+        <img src="Images\Products\shoes\aj4.jpg" alt="Air Jordan 4">
+        <div class="item-content">
+            <h3>Air Jordan 4 (9 Styles)</h3>
+            <p>CNY ¥ 460.0 ≈ $ 69.59</p>
+        </div>
+    </div>
+    
+    <div class="item" onclick="redirectToLink('https://www.pandabuy.com/product?ra=584&url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D5789162740?inviteCode=8AJ7KXC6F')">
+        <img src="Images\Products\shoes\af1white.jpg" alt="Air force 1 White">
+        <div class="item-content">
+            <h3>Air force 1 White</h3>
+            <p>CNY ¥ 120.0 ≈ $ 18.15</p>
+        </div>
+    </div>
+    
+    <div class="item" onclick="redirectToLink('https://www.pandabuy.com/product?ra=381&url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D5682564685?inviteCode=8AJ7KXC6F')">
+        <img src="Images\Products\shoes\af1black.jpg" alt="Air force 1 Black">
+        <div class="item-content">
+            <h3>Air force 1 Black</h3>
+            <p>CNY ¥ 120.0 ≈ $ 18.15</p>
+        </div>
+    </div>
+    
+    <div class="item" onclick="redirectToLink('https://www.pandabuy.com/product?ra=381&url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D4413448213?inviteCode=8AJ7KXC6F')">
+        <img src="Images\Products\shoes\saf1.jpg" alt="Air force 1 Supreme">
+        <div class="item-content">
+            <h3>Air force 1 Supreme</h3>
+            <p>CNY ¥ 170.0 ≈ $ 25.72</p>
+        </div>
+    </div>
+    
+    <div class="item" onclick="redirectToLink('https://www.pandabuy.com/product?ra=316&url=https://shop1624885820.v.weidian.com/item.html?itemID=4480402572&spider_token=4572?inviteCode=8AJ7KXC6F')">
+        <img src="Images\Products\shoes\owaf1.jpg" alt="Air force 1 Off White (21 Styles)">
+        <div class="item-content">
+            <h3>Air force 1 Off White (21 Styles)</h3>
+            <p>CNY ¥ 280.0 ≈ $ 42.36</p>
+        </div>
+    </div>
+
+    <div class="item" onclick="redirectToLink('https://www.pandabuy.com/product?ra=352&url=PJ8avyWKZSzUDdrSwxop0PCAPXnbjUovPdoH5%252B8Mi3EgfTF4ceHeRLFqaMveeNOvD2OOb6AQzFsiiKvoVH7RfAsIzNrMEWVb9pNCaQ%253D%253D?inviteCode=8AJ7KXC6F')">
+        <img src="Images\Products\shoes\dnkslow.jpg" alt="Nike Dunk Low (40+ Styles)">
+        <div class="item-content">
+            <h3>Nike Dunk Low (40+ Styles)</h3>
+            <p>Price: CNY ¥380.00</p>
+        </div>
+    </div>
+
+    <div class="item" onclick="redirectToLink('https://www.pandabuy.com/product?url=PJ2c4NFN4isn%252Fva%252FBc2OMHBDECFSY%252Fqfh9wtpCI1FOXY9%252FzZl1g%252FoCVwPEDGCrbx7r6PMuJB1diu7dpL3STgVcj2MWuPR3zmH1TeUw%253D%253D?inviteCode=8AJ7KXC6F')">
+        <img src="Images\Products\shoes\airmax95.jpg" alt="Air Max 95">
+        <div class="item-content">
+            <h3>Air Max 95</h3>
+            <p>Price: CNY ¥380.00</p>
+        </div>
+    </div>
+
+    <div class="item" onclick="redirectToLink('https://www.pandabuy.com/product?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D3726505599?inviteCode=8AJ7KXC6F')">
+        <img src="Images\Products\shoes\airmaxplus.jpg" alt="Air Max Plus (22 Styles)"">
+        <div class="item-content">
+            <h3>Air Max Plus (22 Styles)</h3>
+            <p>Price: CNY ¥380.00</p>
+        </div>
+    </div>
+    
+    <div class="item" onclick="redirectToLink('https://www.pandabuy.com/product?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D2730306096?inviteCode=8AJ7KXC6F')">
+        <img src="Images\Products\shoes\vmp.jpg" alt="Air VaporMax Plus (26 Styles)"">
+        <div class="item-content">
+            <h3>Air VaporMax Plus (26 Styles)</h3>
+            <p>Price: CNY ¥380.00</p>
+        </div>
+    </div>  
+
+    <div class="item" onclick="redirectToLink('https://www.pandabuy.com/product?url=https%3A%2F%2Fweidian.com%2Fitem.html%3FitemID%3D4428977916?inviteCode=8AJ7KXC6F')">
+        <img src="Images\Products\shoes\aj1.jpg" alt="Jordan 1 High (29 Styles)"">
+        <div class="item-content">
+            <h3>Jordan 1 High (29 Styles)</h3>
+            <p>Price: CNY ¥380.00</p>
+        </div>
+    </div>
+
+  </div>
+
+  <script>
+    function redirectToLink(url) {
+        window.open(url, '_blank');
+    }
+
+    // You can implement search functionality using JavaScript
+    document.getElementById("searchInput").addEventListener("input", function() {
+      var searchTerm = this.value.toLowerCase();
+      var items = document.getElementsByClassName("item");
+      for (var i = 0; i < items.length; i++) {
+        var itemName = items[i].getElementsByClassName("item-content")[0].getElementsByTagName("h3")[0].innerText.toLowerCase();
+        if (itemName.includes(searchTerm)) {
+          items[i].style.display = "block";
+        } else {
+          items[i].style.display = "none";
+        }
+      }
+    });
+  </script>
+
+</body>
+</html>
